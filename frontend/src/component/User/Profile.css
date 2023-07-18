@@ -1,0 +1,78 @@
+.profileContainer {
+    /* background-image: url("../../images//Profile_bg.png"); */
+    background-color:black;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 15;
+}
+
+.cardContainer {
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.cardContainer>div>div>img {
+    margin-top: 2vmax;
+    width: 15vmax;
+    border-radius: 100%;
+    transition: all 0.5s;
+}
+
+.cardContainer>div>div>img:hover {
+        transform: scale(1.1);
+}
+
+.cardContainer>div:first-child>a{
+    text-decoration: none;
+        font-size: 1.3rem;
+        color: #367;
+}
+.cardContainer>div:first-child>a:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+    color: olivedrab;
+}
+.cardContainer>div:first-child>div>h4 {
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+.cardContainer>div:first-child>div>p {
+    font-size: 1.3rem;
+    color:brown;
+}
+
+
+.linkContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 5vmax;
+}
+
+.linkContainer>a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #367;
+}
+.linkContainer>a:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 780px) {
+    .cardContainer{
+        width: 100vw;
+        padding: 5rem 0;
+        margin-top: 0;
+    }
+}

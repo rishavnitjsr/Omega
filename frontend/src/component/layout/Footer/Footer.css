@@ -1,0 +1,116 @@
+footer {
+    margin-top: 10vmax;
+    padding: 2vmax;
+    background-color: #325d67;
+    color: white;
+    display: flex;
+    align-items: center;
+    max-width: 100vw;
+}
+
+.leftFooter {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leftFooter>h4 {
+    font-family: "Calibri";
+    font-size: 1vmax;
+}
+
+.leftFooter>p {
+    text-align: center;
+    font: 300 18px "Calibri";
+}
+
+.leftFooter>img {
+    width: 10vmax;
+    margin: 1vmax;
+    cursor: pointer;
+}
+
+.midFooter {
+    width: 80%;
+    text-align: center;
+}
+
+.midFooter>h1 {
+    color: white;
+    font: 500 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.midFooter>p {
+    max-width: 60%;
+    font: 100 15px "Calibri";
+    margin: 1vmax auto;
+}
+
+.rightFooter {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightFooter>h4 {
+    font: 300 20px "Calibri";
+    margin-bottom: 20px;
+
+}
+.rightFooter>span{
+    display: flex;
+    flex-direction: row;
+}
+
+.rightFooter>span>a {
+    text-decoration: none;
+    font: 400 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    transition: all 0.5s;
+    margin: 0.5vmax;
+}
+
+.rightFooter>span>a:hover {
+    color: grey;
+}
+#gapIcon{
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .leftFooter{
+        order: 1;
+    }
+    .leftFooter>p {
+        text-align: center;
+        font: 500 11px "Calibri";
+    }
+    .midFooter>h1 {
+        font: 400 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .rightFooter>h4 {
+        font: 400 13px "Calibri";
+        text-decoration: underline;
+    }
+    .rightFooter{
+        order: 2;
+    }
+
+    .rightFooter>a {
+        text-decoration: none;
+        font: 400 11px "Calibri";
+        color: white;
+        transition: all 0.5s;
+        margin: 0.5vmax;
+    }
+        footer {
+            flex-direction: column;
+            max-width: 100%;
+        }
+}
