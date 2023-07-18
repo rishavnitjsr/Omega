@@ -129,7 +129,6 @@ const ProductDetails = () => {
             <div>
               <div className='detailsBlock-1'>
                 <h2>{product.name}</h2>
-                <p>Product # {product._id}</p>
               </div>
               <div className='detailsBlock-2'>
                 <Rating {...options} />
@@ -151,8 +150,8 @@ const ProductDetails = () => {
                   </div>) : (<div><p className='outNotify'>Coming soon.</p></div>)}
                 <p>
                   STATUS :{" "}
-                  <b className={product.Stock < 1 ? "redColor" : "greenColor"}>
-                    {product.Stock < 1 ? "OutOfStock" : "In-Stock"}
+                  <b className={product.Stock < 4 ? "redColor" : "greenColor"}>
+                    {product.Stock < 1 ? "OutOfStock" : ((product.Stock > 3) ? "In-Stock" : "Hurry Up! Only few products left")}
                   </b>
                 </p>
               </div>
