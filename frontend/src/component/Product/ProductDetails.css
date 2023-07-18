@@ -36,6 +36,9 @@
     color: rgba(54, 54, 54, 0.582);
     font: 200 1vmax "Roboto";
   }
+  .outNotify{
+    color: green;
+  }
   
   .detailsBlock-2 {
     display: flex;

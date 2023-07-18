@@ -139,14 +139,16 @@ const ProductDetails = () => {
               <div className="detailsBlock-3">
                 <h1>{`₹${product.price}`}</h1>
 
-                <div className="detailsBlock-3-1">
-                  <div className="detailsBlock-3-1-1">
-                    <button onClick={decreaseQuantity}>-</button>
-                    <input readOnly type="number" value={quantity} />
-                    <button onClick={increaseQuantity}>+</button>
-                  </div>{" "}
-                  <button disabled={product.Stock < 1 ? true : false} onClick={addToCartHandler}>Add to Cart</button>
-                </div>
+                {product.Stock >= 1 ?
+
+                  (<div className="detailsBlock-3-1">
+                    <div className="detailsBlock-3-1-1">
+                      <button onClick={decreaseQuantity}>-</button>
+                      <input readOnly type="number" value={quantity} />
+                      <button onClick={increaseQuantity}>+</button>
+                    </div>{" "}
+                    <button disabled={product.Stock < 1 ? true : false} onClick={addToCartHandler}>Add to Cart</button>
+                  </div>) : (<div><p className='outNotify'>Coming soon.</p></div>)}
                 <p>
                   STATUS :{" "}
                   <b className={product.Stock < 1 ? "redColor" : "greenColor"}>
