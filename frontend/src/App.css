@@ -1,6 +1,7 @@
 * {
     margin: 0;
     scroll-behavior: smooth;
+    background-color: black;
 }
 
 input::-webkit-outer-spin-button,
